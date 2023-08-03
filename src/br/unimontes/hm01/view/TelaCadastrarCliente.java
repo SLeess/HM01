@@ -2,7 +2,8 @@ package br.unimontes.hm01.view;
 
 import br.unimontes.hm01.DAO.DAOException;
 import br.unimontes.hm01.controller.ClienteControl;
-import br.unimontes.hm01.interfaces.JTextFieldLimit;
+import br.unimontes.hm01.interfaces.*;
+import static br.unimontes.hm01.interfaces.LimitaCaracteres.TipoEntrada.*;
 import br.unimontes.hm01.model.Cliente;
 import java.awt.Color;
 import java.sql.SQLException;
@@ -17,10 +18,10 @@ import javax.swing.JOptionPane;
 public class TelaCadastrarCliente extends javax.swing.JFrame {
     public TelaCadastrarCliente() {
         initComponents();
-        tfNome.setDocument(new JTextFieldLimit(20));
-        tfSobrenome.setDocument(new JTextFieldLimit(50));
-        tfEmail.setDocument(new JTextFieldLimit(100));
-        tfTelefone.setDocument(new JTextFieldLimit(15));
+        tfNome.setDocument(new LimitaCaracteres(20, NOME));
+        tfSobrenome.setDocument(new LimitaCaracteres(50, NOME));
+        tfEmail.setDocument(new LimitaCaracteres(100, EMAIL));
+        tfTelefone.setDocument(new LimitaCaracteres(15, NUM));
     }
     
     @SuppressWarnings("unchecked")
