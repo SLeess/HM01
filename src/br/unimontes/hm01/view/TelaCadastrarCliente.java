@@ -18,10 +18,10 @@ import javax.swing.JOptionPane;
 public class TelaCadastrarCliente extends javax.swing.JFrame {
     public TelaCadastrarCliente() {
         initComponents();
-        //tfNome.setDocument(new LimitaCaracteres(20, NOME));
-        //tfSobrenome.setDocument(new LimitaCaracteres(50, NOME));
-        //tfEmail.setDocument(new LimitaCaracteres(100, EMAIL));
-        //tfTelefone.setDocument(new LimitaCaracteres(15, NUM));
+        tfNome.setDocument(new LimitaCaracteres(20, NOME));
+        tfSobrenome.setDocument(new LimitaCaracteres(50, NOME));
+        tfEmail.setDocument(new LimitaCaracteres(100, EMAIL));
+        tfTelefone.setDocument(new LimitaCaracteres(15, NUM));
     }
     
     @SuppressWarnings("unchecked")
