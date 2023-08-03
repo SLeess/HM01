@@ -3,7 +3,7 @@ package br.unimontes.hm01.interfaces;
 import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.PlainDocument;
-
+//
 public class LimitaCaracteres extends PlainDocument {
     public enum TipoEntrada{NOME, CPF, DATA, USER, SENHA, NUM, EMAIL;};
     
