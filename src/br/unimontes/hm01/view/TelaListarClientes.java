@@ -380,6 +380,8 @@ public class TelaListarClientes extends javax.swing.JFrame {
         btBuscar.setVisible(true);
         btAtualizar.setVisible(false);
         cbExcluir.setVisible(false);
+        cbExcluir.setSelected(false);
+        liberarPesquisa();
         
         tfId.setText("");
         tfNome.setText("");
@@ -412,7 +414,7 @@ public class TelaListarClientes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tfIdFocusGained
 
-    private void cbExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbExcluirActionPerformed
+    private void liberarPesquisa(){
         if(cbExcluir.isSelected() == true){
             tfNome.setEditable(false);
             tfSobrenome.setEditable(false);
@@ -426,6 +428,10 @@ public class TelaListarClientes extends javax.swing.JFrame {
             tfEmail.setEditable(true);
             tfTelefone.setEditable(true);
         }
+    }
+    
+    private void cbExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbExcluirActionPerformed
+        liberarPesquisa();
     }//GEN-LAST:event_cbExcluirActionPerformed
 
     private void cbExcluirStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_cbExcluirStateChanged
