@@ -1,7 +1,5 @@
 package br.unimontes.hm01.controller;
 
-//extra part
-
 import br.unimontes.hm01.DAO.DAOException;
 import java.sql.SQLException;
 import java.util.List;
